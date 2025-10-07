@@ -1,0 +1,63 @@
+:root {
+  --background-color: #f5f5f5; /* Fondo claro */
+  --card-background: #ffffff; /* Tarjetas blancas */
+  --text-color: #222222; /* Texto oscuro */
+  --secondary-text: #555555; /* Texto gris medio */
+  --accent-color: #0070f3; /* Azul Next.js */
+  --border-color: #dddddd;
+}
+
+html, body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+/* Tarjetas de producto */
+.product-card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Botones */
+button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0059c1;
+}
+
+/* Etiquetas */
+.tag {
+  display: inline-block;
+  background-color: #eaeaea;
+  color: #333;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-right: 6px;
+}
